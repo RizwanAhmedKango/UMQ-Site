@@ -1,0 +1,235 @@
+.designed-by,
+#footer-copy .wpzoom,
+#footer .wpzoom,
+.site-info .designed-by,
+.site-info p.right,
+.footer-info .designed {
+    display: none;
+}
+
+/* do not display no comment*/
+.nocomments{
+	display:none;
+}
+/* do not display catelogy */
+.entry-meta{
+	display:none;
+}
+
+/* set breadcrumbs color and font size*/
+.breadcrumbs a:link{
+	color:#030303;
+}
+.breadcrumbs a:visited{
+	color:black;
+}
+.breadcrumbs{
+
+	color:black;
+	font-size:14px;
+	font-weight: normal;
+}
+
+.site-info .copyright{
+    width: 100%;
+}
+
+.home_widgets_dark {
+    background: #73216D;
+}
+
+.search-form .search-submit:hover{
+	background:#73216D;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+.navbar-search .search-field {
+background: rgba(0,0,0,.1) url(/web/20250821081745im_/https://www.cse.cuhk.edu.hk/wp-content/themes/capital/images/search-icon.png) 22px 15px no-repeat;
+}
+}
+
+button, input[type=button], input[type=reset], input[type=submit]{
+background: #73216d;
+}
+
+	.wechat_qrcode {
+		position:absolute;
+		top: 26px;
+		right: 0px;
+		width: 150px;
+		text-align: center;
+		display: none;
+		border: 1px solid #000;
+		border-radius: 2px;
+		background: white;
+		z-index: 5;
+	}	
+	
+	.wechat_qrcode::before {
+		content: '';
+		border-style: solid;
+		border-width: 0px 8px 8px 8px;
+		border-color: transparent transparent #000 transparent;
+		position: absolute;
+		bottom: 100%;
+		right: 2px;
+		margin-left: 8px;	
+	}		
+	
+	.wechat_qrcode	 >img {
+		width: 100%; 
+	}
+
+	.wechat_wrapper {
+		position:relative;
+		display: inline;
+	}
+
+.mega-menu-primary .mega-menu-wrap:last-of-type,
+.mega-menu-main  {
+  display: none !important;
+}
+
+/*
+ * not display breadcrumb
+.cat-links {
+  display: none;
+}
+*/
+.recent-posts {
+    width: 90%;
+}
+
+/*Affect Visiting us and details of announcement */
+/*.post-wrap{
+	width:90%;
+}*/
+
+.sidebar {
+    display: none;
+}
+/*Latest News Title line*/
+.widget .feature-posts-list li a {
+	font-size:16px;color: #212426; }
+
+/*Latest News Date line*/
+.widget .feature-posts-list small { font-size: 15px; color: #838383; margin: 0 0 5px; display: block; }
+
+.section-header {
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 5px 10px;
+	background-image:linear-gradient(90deg, #F0ECF7 0%, #FFFFFF 80%);
+	color:#5c33ad;
+	font-weight: 600;
+}
+
+/* list pt will be indent*/
+ul:not(.slides) li{
+	margin-left:10px;
+}
+
+
+/* 2nd list pt less indent*/ 
+li ul li {
+	margin-left:3px;
+}
+
+.entry-title{
+		padding: 2px 0px 10px 0px;
+}
+
+/* disable showing date */
+.search-results .entry-date {
+	display: none;
+}
+
+/* reduce space between department and slider */
+.home_widgets{
+	margin-top:-15px;
+}
+
+/* Set the font-size for viewall*/
+#viewall {
+	font-size:16px;
+	font-family:Roboto;
+}
+
+/* set the space between logo and menu */
+#mega-menu-wrap-primary{
+	margin-top:0px;
+}
+
+/*Toggle menu display problem*/
+/*.eael-adv-accordion .eael-accordion-header .eael-accordion-list*/
+.eael-adv-accordion .eael-accordion-list .eael-accordion-header {
+	display:block;
+	line-height:2;
+}
+
+/* move left 5 more px*/
+.fas{
+	margin-left:5px
+}
+
+
+
+/* icon under name of people for research */
+.entry-content ul:not(.wp-block-gallery){
+		margin:0 0 14px 0;
+}
+
+/* bullet pt at another page */
+.entry-content ul li{
+	margin:0 0 0 20px;
+}
+
+td {
+	padding: 5px;
+}
+
+.elementor-tab-title{
+	color:black;
+}
+
+/* elementor width */
+:root {
+  --e-is-preview-mode: 0; }
+  @media (max-width: 1439px) {
+    :root {
+      --e-editor-panel-width: 1500px; } }
+  @media (min-width: 1440px) {
+    :root {
+      --e-editor-panel-width: 1500px; } }
+
+
+/* accordion align right the icon*/
+span+i{
+	float:right;
+}
+
+/* disable a single item*/
+/*div#elementor-tab-title-7372 {
+    display: none;
+}*/
+
+
+/*
+     FILE ARCHIVED ON 08:17:45 Aug 21, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:25:51 Mar 29, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.498
+  exclusion.robots: 0.019
+  exclusion.robots.policy: 0.008
+  esindex: 0.009
+  cdx.remote: 5.616
+  LoadShardBlock: 125.545 (3)
+  PetaboxLoader3.datanode: 79.708 (5)
+  PetaboxLoader3.resolve: 2052.244 (2)
+  load_resource: 2079.131 (2)
+*/

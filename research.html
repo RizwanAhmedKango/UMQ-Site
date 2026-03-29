@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Projects | Dr. Umair Mujtaba Qureshi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="profile-section">
+            <img src="QURESHI-Umair-Mujtaba.jpg" alt="Dr. Umair Mujtaba Qureshi" class="profile-img">
+            <h1 class="profile-name">Umair M. Qureshi</h1>
+            <p class="profile-title">Senior Lecturer (IT)<br>James Cook University</p>
+        </div>
+        
+        <nav class="nav-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-user-tie"></i> About Me</a></li>
+                <li class="nav-item"><a href="research.html" class="nav-link active"><i class="fas fa-microscope"></i> Research</a></li>
+                <li class="nav-item"><a href="publications.html" class="nav-link"><i class="fas fa-book"></i> Publications</a></li>
+                <li class="nav-item"><a href="teaching.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
+                <li class="nav-item"><a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" class="social-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/umq-jcu" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://orcid.org/0000-0002-3151-6975" class="social-icon" title="ORCID"><i class="fab fa-orcid"></i></a>
+            </div>
+            <p>© 2024 Umair M. Qureshi</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section id="research" class="section">
+            <h1 class="section-title">Research Projects</h1>
+            
+            <div class="card">
+                <h3>Connected and Autonomous Systems</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Project Focus: Integration of UWB and Accelerometry for high-precision tracking.</p>
+                <p>
+                    Leading the development of a hybrid localization system that combines Ultra-Wideband (UWB) and inertial sensing (accelerometers) for monitoring livestock and autonomous vehicle behavior. This project addresses the challenge of precise tracking in varied outdoor and industrial environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Industrial IoT for Smart Manufacturing</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Project Focus: Edge-computing protocols and security.</p>
+                <p>
+                    Investigation of secure communication protocols for large-scale Industrial IoT networks. This research develops lightweight encryption and authentication methods suitable for resource-constrained edge devices in smart factories.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Applied AI in AgTech</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Project Focus: Predictive analytics and sensor integration.</p>
+                <p>
+                    Utilizing machine learning models to analyze multi-spectral sensor data from agricultural fields. The project seeks to build predictive models for crop health and yield estimation, directly impacting sustainable farming practices.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Information Security in Wireless Sensor Networks</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Project Focus: Threat detection and data integrity.</p>
+                <p>
+                    Researching robust mechanisms for defending against cyber-physical attacks on wireless sensor networks. We develop anomaly detection algorithms that differentiate between sensor malfunctions and malicious interference.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Theme Switcher -->
+    <style>
+        .theme-switcher-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 2000;
+        }
+
+        .theme-menu {
+            position: fixed;
+            bottom: 6rem;
+            right: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 2000;
+            border: 1px solid var(--border-color);
+        }
+
+        .theme-option {
+            padding: 0.8rem 1.5rem;
+            color: var(--text-main);
+            text-decoration: none;
+            display: block;
+            font-weight: 500;
+            border-radius: 8px;
+        }
+
+        .theme-option:hover {
+            background: var(--bg-light);
+            color: var(--accent);
+        }
+    </style>
+
+    <div class="theme-switcher-btn" id="switcher-btn">
+        <i class="fas fa-palette"></i>
+    </div>
+    <div class="theme-menu" id="switcher-menu">
+        <p style="font-weight: 700; margin-bottom: 0.5rem; padding-left: 1rem; color: var(--primary);">SWITCH THEME</p>
+        <a href="Option1_ModernAcademic/index.html" class="theme-option">1. Modern Academic</a>
+        <a href="Option2_TechInnovator/index.html" class="theme-option">2. Tech Innovator</a>
+        <a href="Option3_VisualStoryteller/index.html" class="theme-option">3. Visual Storyteller</a>
+        <a href="index.html" class="theme-option" style="color: var(--accent);">4. Data-Driven Researcher (Active)</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const btn = document.getElementById('switcher-btn');
+        const menu = document.getElementById('switcher-menu');
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+    </script>
+</body>
+</html>

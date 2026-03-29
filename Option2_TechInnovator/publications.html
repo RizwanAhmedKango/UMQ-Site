@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Dr. Umair Mujtaba Qureshi | Tech Innovator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="padding-top: 100px;">
+    
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="header">
+        <div class="logo">UMQ_DEV</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">INFO</a></li>
+                <li><a href="research.html" class="nav-link">PROJECTS</a></li>
+                <li><a href="publications.html" class="nav-link active">PAPERS</a></li>
+                <li><a href="contact.html" class="nav-link">DECRYPT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section">
+        <h1 style="font-size: 3.5rem; color: var(--accent); margin-bottom: 5rem;">INTEL_COLLECTION</h1>
+        
+        <div style="display: grid; gap: 2rem;">
+            <div class="tech-card" style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start;">
+                <div style="font-family: 'Space Grotesk'; font-size: 1.5rem; color: var(--accent-secondary);">/15</div>
+                <div>
+                    <h3 style="margin-bottom: 0.5rem; letter-spacing: 1px;">Underwater sensor network applications: A comprehensive survey</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">F. K. Shaikh, <span style="color: var(--accent);">U. M. Qureshi</span>, Zuneera Umair, et al.</p>
+                    <div style="background: var(--bg); display: inline-block; padding: 4px 12px; border-radius: 4px; border: 1px solid var(--border); font-size: 0.75rem; color: var(--accent);">532 CITATIONS | WJ Communication Systems</div>
+                </div>
+            </div>
+
+            <div class="tech-card" style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start;">
+                <div style="font-family: 'Space Grotesk'; font-size: 1.5rem; color: var(--accent-secondary);">/12</div>
+                <div>
+                    <h3 style="margin-bottom: 0.5rem; letter-spacing: 1px;">RF path and absorption loss estimation for underwater wireless sensor networks</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Z. Umair, F. K. Shaikh, <span style="color: var(--accent);">U. M. Qureshi</span>, et al.</p>
+                    <div style="background: var(--bg); display: inline-block; padding: 4px 12px; border-radius: 4px; border: 1px solid var(--border); font-size: 0.75rem; color: var(--accent);">197 CITATIONS | WiAd 2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 6rem; text-align: center;">
+            <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" target="_blank" class="btn-glow">OPEN_FULL_REPOSITORY</a>
+        </div>
+    </main>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher-btn" id="switcher-btn">
+        <i class="fas fa-palette"></i>
+    </div>
+    <div class="theme-menu" id="switcher-menu">
+        <p style="font-weight: 700; margin-bottom: 0.5rem; padding-left: 1rem; color: var(--accent);">SWITCH THEME</p>
+        <a href="../Option1_ModernAcademic/index.html" class="theme-option">1. Modern Academic</a>
+        <a href="index.html" class="theme-option" style="color: var(--accent);">2. Tech Innovator (Active)</a>
+        <a href="../Option3_VisualStoryteller/index.html" class="theme-option">3. Visual Storyteller</a>
+        <a href="../index.html" class="theme-option">4. Data-Driven Researcher</a>
+    </div>
+
+    <script>
+        const btn = document.getElementById('switcher-btn');
+        const menu = document.getElementById('switcher-menu');
+        btn.addEventListener('click', () => {
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.size = Math.random() * 2;
+            }
+            update() {
+                this.x += this.vx; this.y += this.vy;
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            draw() {
+                ctx.fillStyle = '#00f5d4'; ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill();
+            }
+        }
+        function init() { particles = []; for (let i = 0; i < 100; i++) particles.push(new Particle()); }
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p, i) => {
+                p.update(); p.draw();
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                    if (dist < 100) {
+                        ctx.strokeStyle = `rgba(0, 245, 212, ${1 - dist/100})`;
+                        ctx.lineWidth = 0.5; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+                    }
+                }
+            });
+            requestAnimationFrame(animate);
+        }
+        window.addEventListener('resize', resize);
+        resize(); init(); animate();
+    </script>
+</body>
+</html>

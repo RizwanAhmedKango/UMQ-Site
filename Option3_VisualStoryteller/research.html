@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Dr. Umair Mujtaba Qureshi | Visual Storyteller</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <header class="header" style="position: fixed; background: rgba(30, 41, 59, 1); padding: 1.5rem 10%;">
+        <div class="logo">UMQ.</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">ABOUT</a></li>
+                <li><a href="research.html" class="nav-link active">RESEARCH</a></li>
+                <li><a href="publications.html" class="nav-link">PUBS</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section class="container">
+            <h1 class="title-underline" style="font-size: 3.5rem;">Exploring Frontiers</h1>
+            
+            <div style="display: grid; gap: 8rem;">
+                <div class="grid-layout">
+                    <div>
+                        <h2 style="font-size: 2.2rem; margin-bottom: 2rem;">Connected Ecosystems</h2>
+                        <p style="margin-bottom: 2rem; font-family: 'Lora', serif; font-style: italic; font-size: 1.1rem; color: var(--text-muted);">"The integration of Industrial IoT and Edge computing for mission-critical applications."</p>
+                        <p>
+                            Focusing on the architectural design of high-integrity wireless networks. This research develops the backbone for smart manufacturing environments where latency and reliability are non-negotiable.
+                        </p>
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                            <span style="background: var(--bg); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 5px; font-size: 0.8rem; font-weight: 700;">#IIoT</span>
+                            <span style="background: var(--bg); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 5px; font-size: 0.8rem; font-weight: 700;">#EdgeComputing</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=1470" alt="Industry" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow-sm);">
+                    </div>
+                </div>
+
+                <div class="grid-layout">
+                    <div style="order: 2;">
+                        <h2 style="font-size: 2.2rem; margin-bottom: 2rem;">Predictive Intelligence</h2>
+                        <p style="margin-bottom: 2rem; font-family: 'Lora', serif; font-style: italic; font-size: 1.1rem; color: var(--text-muted);">"Harnessing machine learning to decode complex agricultural and industrial signatures."</p>
+                        <p>
+                            Implementing advanced AI pipelines that process multi-spectral sensor data. This research enables a new level of environmental monitoring, particularly for sustainable farming in the Australian tropics.
+                        </p>
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                            <span style="background: var(--bg); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 5px; font-size: 0.8rem; font-weight: 700;">#AI</span>
+                            <span style="background: var(--bg); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 5px; font-size: 0.8rem; font-weight: 700;">#DataScience</span>
+                        </div>
+                    </div>
+                    <div style="order: 1;">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1470" alt="Lab" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow-sm);">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher-btn" id="switcher-btn">
+        <i class="fas fa-palette"></i>
+    </div>
+    <div class="theme-menu" id="switcher-menu">
+        <p style="font-weight: 700; margin-bottom: 0.5rem; padding-left: 1rem;">SWITCH THEME</p>
+        <a href="../Option1_ModernAcademic/index.html" class="theme-option">1. Modern Academic</a>
+        <a href="../Option2_TechInnovator/index.html" class="theme-option">2. Tech Innovator</a>
+        <a href="index.html" class="theme-option" style="color: var(--accent);">3. Visual Storyteller (Active)</a>
+        <a href="../index.html" class="theme-option">4. Data-Driven Researcher</a>
+    </div>
+
+    <script>
+        const btn = document.getElementById('switcher-btn');
+        const menu = document.getElementById('switcher-menu');
+        btn.addEventListener('click', () => {
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Umair Mujtaba Qureshi | Tech Innovator Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="header">
+        <div class="logo">UMQ_DEV</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">INFO</a></li>
+                <li><a href="research.html" class="nav-link">PROJECTS</a></li>
+                <li><a href="publications.html" class="nav-link">PAPERS</a></li>
+                <li><a href="contact.html" class="nav-link">DECRYPT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p style="color: var(--accent); letter-spacing: 4px; font-weight: 700; margin-bottom: 1rem;">[ SENIOR_LECTURER_IT_JCU ]</p>
+                <h1>Autonomous<br>Intelligence<br>Redefined.</h1>
+                <p>
+                    Advancing the frontier of Industrial IoT and Applied AI through architectural innovation and secure, decentralized systems.
+                </p>
+                <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                    <a href="#projects" class="btn-glow">VIEW PROTOCOLS</a>
+                    <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration: none; color: white; display: flex; align-items: center; border-bottom: 1px solid var(--accent); padding-bottom: 5px;">
+                        GOOGLE SCHOLAR <i class="fas fa-arrow-right" style="margin-left: 10px; font-size: 0.8rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 style="font-size: 2.5rem; margin-bottom: 4rem; text-align: center; color: var(--accent);">CORE_RESEARCH_STACK</h2>
+            
+            <div class="tech-card" style="text-align: center;">
+                <h4 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 0.5rem;">1,076</h4>
+                <p style="font-size: 0.8rem; letter-spacing: 2px;">TOTAL_CITATIONS</p>
+            </div>
+            <div class="tech-card" style="text-align: center;">
+                <h4 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 0.5rem;">17</h4>
+                <p style="font-size: 0.8rem; letter-spacing: 2px;">H_INDEX_VAL</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Edge Connectivity</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                        Multi-node synchronization and real-time data ingestion for autonomous manufacturing clusters.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-fingerprint"></i>
+                    <h3>Protocol Security</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                        Implementation of lightweight cryptography and zero-trust architectures for resource-constrained IoT.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Smart AgSystems</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                        End-to-end AI pipelines for agricultural monitoring and autonomous fleet coordination.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: rgba(0,0,0,0.5); border-top: 1px solid var(--border);">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <img src="../QURESHI-Umair-Mujtaba.jpg" alt="Profile" style="width: 100%; border-radius: 4px; border: 1px solid var(--border); filter: grayscale(100%) contrast(1.2);">
+                </div>
+                <div>
+                    <h2 style="margin-bottom: 2rem;">SYNOPSIS</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                        Dr. Umair Mujtaba Qureshi is a Senior Lecturer in Information Technology at James Cook University. His work specializes in Industrial Internet of Things (IIoT), Information Security, and Applied Artificial Intelligence.
+                    </p>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                        With a research track record spanning Pakistan, Hong Kong, and Australia, he continues to push the boundaries of how connected systems interact with the physical world.
+                    </p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div>
+                            <span style="font-size: 0.7rem; letter-spacing: 2px; color: var(--accent);">H-INDEX</span>
+                            <div style="font-size: 2.5rem; font-family: 'Space Grotesk';">12</div>
+                        </div>
+                        <div>
+                            <span style="font-size: 0.7rem; letter-spacing: 2px; color: var(--accent-secondary);">CITATIONS</span>
+                            <div style="font-size: 2.5rem; font-family: 'Space Grotesk';">500+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher-btn" id="switcher-btn">
+        <i class="fas fa-palette"></i>
+    </div>
+    <div class="theme-menu" id="switcher-menu">
+        <p style="font-weight: 700; margin-bottom: 0.5rem; padding-left: 1rem; color: var(--accent);">SWITCH THEME</p>
+        <a href="../Option1_ModernAcademic/index.html" class="theme-option">1. Modern Academic</a>
+        <a href="index.html" class="theme-option" style="color: var(--accent);">2. Tech Innovator (Active)</a>
+        <a href="../Option3_VisualStoryteller/index.html" class="theme-option">3. Visual Storyteller</a>
+        <a href="../index.html" class="theme-option">4. Data-Driven Researcher</a>
+    </div>
+
+    <script>
+        // Swicher Toggle
+        const btn = document.getElementById('switcher-btn');
+        const menu = document.getElementById('switcher-menu');
+        btn.addEventListener('click', () => {
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Background Animation (Connecting Nodes)
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.size = Math.random() * 2;
+            }
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            draw() {
+                ctx.fillStyle = '#00f5d4';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            particles = [];
+            for (let i = 0; i < 100; i++) particles.push(new Particle());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p, i) => {
+                p.update();
+                p.draw();
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                    if (dist < 100) {
+                        ctx.strokeStyle = `rgba(0, 245, 212, ${1 - dist/100})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                }
+            });
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+        init();
+        animate();
+    </script>
+</body>
+</html>

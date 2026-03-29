@@ -1,0 +1,224 @@
+/* 
+    The Visual Storyteller Design System
+    Focus: Immersive, Image-Centric, Card-Based Narrative
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Lora:italic,wght@400;700&display=swap');
+
+:root {
+    --primary: #1e293b; /* Deep Slate */
+    --accent: #f59e0b; /* Amber */
+    --accent-dark: #cc7d00;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #334155;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+    --shadow-sm: 0 4px 10px rgba(0,0,0,0.05);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.1);
+    --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    color: var(--primary);
+    line-height: 1.2;
+}
+
+/* Page Header */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 2.5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+/* Immersive Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.4)), 
+                url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 10%;
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 10vw, 6rem);
+    color: white;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 strong {
+    font-weight: 700;
+    display: block;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+/* Content Sections */
+.container {
+    padding: 10rem 10%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+.title-underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.title-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: var(--accent);
+}
+
+/* Feature Cards */
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.story-card {
+    background: var(--card-bg);
+    padding: 3.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--border);
+}
+
+.story-card:hover {
+    transform: scale(1.03) translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.story-card i {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    display: block;
+    color: var(--accent);
+}
+
+/* Theme Switcher */
+.theme-switcher-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    z-index: 2000;
+}
+
+.theme-menu {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    display: none;
+    z-index: 2000;
+    border: 1px solid var(--border);
+}
+
+.theme-option {
+    padding: 0.8rem 1.5rem;
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.theme-option:hover {
+    background: var(--bg);
+    color: var(--accent);
+}
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+    .grid-layout { grid-template-columns: 1fr; }
+}

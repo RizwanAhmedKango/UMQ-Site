@@ -4,51 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Dr. Umair Mujtaba Qureshi | Modern Academic</title>
+    <meta name="description" content="Research areas of Dr. Umair Mujtaba Qureshi: Industrial IoT, applied AI, and cyber-physical security for wireless sensor networks.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
     <header class="header">
-        <div class="logo" style="font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.5rem;">UMQ.</div>
-        <nav>
+        <a class="logo" href="index.html" style="font-family:'Playfair Display',serif;font-weight:900;font-size:1.5rem;">UMQ.</a>
+        <button class="nav-toggle" data-nav-toggle="#primary-nav" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav id="primary-nav" aria-label="Primary">
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">About</a></li>
-                <li><a href="research.html" class="nav-link active">Research</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
                 <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="section" style="padding-top: 10rem;">
-            <div class="section-label">
-                <h2>Research Areas</h2>
-            </div>
-            
-            <div style="display: grid; gap: 4rem;">
-                <div class="fade-up" style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--accent);">01. Industrial IoT</div>
+        <section class="section" style="padding-top:10rem;">
+            <div class="section-label"><h2>Research Areas</h2></div>
+            <div style="display:grid;gap:4rem;">
+                <div class="fade-up editorial-row">
+                    <div class="lead">01. Industrial IoT</div>
                     <div>
-                        <p style="margin-bottom: 1.5rem;">Developing secure, decentralized communication protocols for mission-critical industrial environments. Focus on edge computing and real-time data synchronization at the network fringe.</p>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);">Key project: "Resilient Edge Communication Frameworks for Smart Factories"</p>
+                        <p style="margin-bottom:1.5rem;">Developing secure, decentralized communication protocols for mission-critical industrial environments. Focus on edge computing and real-time data synchronization at the network fringe.</p>
+                        <p style="font-size:0.9rem;color:var(--text-muted);">Key project: "Resilient Edge Communication Frameworks for Smart Factories"</p>
                     </div>
                 </div>
-
-                <div class="fade-up" style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; border-top: 1px solid var(--border); padding-top: 4rem;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--accent);">02. Applied AI</div>
+                <div class="fade-up editorial-row">
+                    <div class="lead">02. Applied AI</div>
                     <div>
-                        <p style="margin-bottom: 1.5rem;">Integrating deep learning models for predictive maintenance and behavioral analysis in autonomous fleets. Leveraging multi-sensor data fusion to improve decision-making accuracy.</p>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);">Key project: "Deep Learning for Autonomous Fleet Behavior Modeling"</p>
+                        <p style="margin-bottom:1.5rem;">Integrating deep learning models for predictive maintenance and behavioral analysis in autonomous fleets. Leveraging multi-sensor data fusion to improve decision-making accuracy.</p>
+                        <p style="font-size:0.9rem;color:var(--text-muted);">Key project: "Deep Learning for Autonomous Fleet Behavior Modeling"</p>
                     </div>
                 </div>
-
-                <div class="fade-up" style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; border-top: 1px solid var(--border); padding-top: 4rem;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--accent);">03. Cyber-Physical Security</div>
+                <div class="fade-up editorial-row">
+                    <div class="lead">03. Cyber-Physical Security</div>
                     <div>
-                        <p style="margin-bottom: 1.5rem;">Investigation of lightweight cryptographic algorithms and zero-trust security architectures tailored for resource-constrained IoT devices.</p>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);">Key project: "Post-Quantum Security for Wireless Sensor Networks"</p>
+                        <p style="margin-bottom:1.5rem;">Investigation of lightweight cryptographic algorithms and zero-trust security architectures tailored for resource-constrained IoT devices and wireless sensor networks.</p>
+                        <p style="font-size:0.9rem;color:var(--text-muted);">Key project: "Threat Detection &amp; Data Integrity for Wireless Sensor Networks"</p>
+                    </div>
+                </div>
+                <div class="fade-up editorial-row">
+                    <div class="lead">04. AgTech &amp; Sensing</div>
+                    <div>
+                        <p style="margin-bottom:1.5rem;">Hybrid UWB and inertial localization for livestock and autonomous vehicles, and multi-spectral analytics for crop health — translating connectivity into sustainable farming outcomes.</p>
+                        <p style="font-size:0.9rem;color:var(--text-muted);">Key project: "Connected &amp; Autonomous Systems for Australian AgTech"</p>
                     </div>
                 </div>
             </div>
@@ -56,34 +61,15 @@
     </main>
 
     <footer class="footer">
-        <p style="font-size: 0.8rem; color: var(--text-muted);">© 2024 Dr. Umair Mujtaba Qureshi. All Rights Reserved.</p>
+        <div style="margin-bottom:2rem;">
+            <a href="https://www.linkedin.com/in/umq-jcu" target="_blank" rel="noopener" style="color:var(--text);font-size:1.5rem;margin:0 1rem;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" style="color:var(--text);font-size:1.5rem;margin:0 1rem;" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://orcid.org/0000-0002-3151-6975" target="_blank" rel="noopener" style="color:var(--text);font-size:1.5rem;margin:0 1rem;" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+        </div>
+        <p style="font-size:0.8rem;color:var(--text-muted);">© <span data-year>2026</span> Dr. Umair Mujtaba Qureshi. All Rights Reserved.</p>
     </footer>
 
-    <!-- Theme Switcher -->
-    <div class="theme-switcher-btn" id="switcher-btn">
-        <i class="fas fa-palette"></i>
-    </div>
-    <div class="theme-menu" id="switcher-menu">
-        <p style="font-weight: 700; margin-bottom: 0.5rem; padding-left: 1rem;">SWITCH THEME</p>
-        <a href="index.html" class="theme-option">1. Modern Academic (Active)</a>
-        <a href="../Option2_TechInnovator/index.html" class="theme-option">2. Tech Innovator</a>
-        <a href="../Option3_VisualStoryteller/index.html" class="theme-option">3. Visual Storyteller</a>
-        <a href="../index.html" class="theme-option">4. Data-Driven Researcher</a>
-    </div>
-
-    <script>
-        const btn = document.getElementById('switcher-btn');
-        const menu = document.getElementById('switcher-menu');
-        btn.addEventListener('click', () => {
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        });
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-    </script>
+    <script src="../assets/app.js"></script>
+    <script src="../assets/switcher.js"></script>
 </body>
 </html>

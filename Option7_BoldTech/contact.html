@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact // Umair Mujtaba Qureshi</title>
+    <meta name="description" content="Contact Dr. Umair Mujtaba Qureshi, Senior Lecturer in IT at James Cook University.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a class="brand grad-text" href="index.html">UMQ//</a>
+            <nav id="menu" class="menu" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="index.html">about</a></li>
+                    <li><a class="nav-link" href="research.html">research</a></li>
+                    <li><a class="nav-link" href="publications.html">publications</a></li>
+                    <li><a class="nav-link" href="teaching.html">teaching</a></li>
+                    <li><a class="nav-link" href="experience.html">experience</a></li>
+                    <li><a class="nav-link" href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" data-nav-toggle="#menu" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <section class="page-head">
+            <p class="eyebrow">// contact</p>
+            <h1>Get in touch</h1>
+            <p>Open to research collaborations, PhD supervision, and industry partnerships.</p>
+        </section>
+
+        <section style="padding-top:1rem;">
+            <div class="grid cols-2" style="align-items:start;">
+                <div class="tcard reveal">
+                    <h3 style="margin-bottom:1rem;">Coordinates</h3>
+                    <p style="margin-bottom:0.9rem;color:var(--muted);"><i class="fas fa-location-dot" style="color:var(--blue);width:22px;"></i> Information Technology Department, James Cook University, Australia</p>
+                    <p style="margin-bottom:0.9rem;"><i class="fas fa-envelope" style="color:var(--blue);width:22px;"></i> <a href="mailto:umair.qureshi@jcu.edu.au" style="color:var(--magenta);text-decoration:none;">umair.qureshi@jcu.edu.au</a></p>
+                    <p><i class="fab fa-linkedin" style="color:var(--blue);width:22px;"></i> <a href="https://www.linkedin.com/in/umq-jcu" target="_blank" rel="noopener" style="color:var(--magenta);text-decoration:none;">linkedin.com/in/umq-jcu</a></p>
+                    <div class="socials" style="margin-top:1.5rem;">
+                        <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://orcid.org/0000-0002-3151-6975" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+                    </div>
+                </div>
+                <div class="tcard reveal">
+                    <h3 style="margin-bottom:1rem;">Send a message</h3>
+                    <form onsubmit="event.preventDefault(); alert('Message sent! (Simulation)');">
+                        <div class="field"><label for="c-name">Name</label><input id="c-name" type="text" required></div>
+                        <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" required></div>
+                        <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" rows="5" required></textarea></div>
+                        <button type="submit" class="btn grad" style="border:none;cursor:pointer;">Transmit <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="foot-inner">
+            <p>© <span data-year>2026</span> UMAIR M. QURESHI // SENIOR LECTURER (IT), JCU</p>
+            <div class="socials">
+                <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/umq-jcu" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://orcid.org/0000-0002-3151-6975" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/app.js"></script>
+    <script src="../assets/switcher.js"></script>
+</body>
+</html>

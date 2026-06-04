@@ -222,3 +222,46 @@ h1, h2, h3 {
 @media (max-width: 1024px) {
     .grid-layout { grid-template-columns: 1fr; }
 }
+
+/* --- Multi-page additions: solid header for light pages, active nav, mobile nav, timeline --- */
+.logo { text-decoration: none; }
+.header.solid { position: sticky; top: 0; background: var(--primary); padding: 1.25rem 10%; }
+.nav-link.active { color: var(--accent); }
+
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 6px; }
+.nav-toggle span { display: block; width: 26px; height: 2px; background: #fff; transition: 0.3s; }
+
+/* Reveal */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* Timeline / steps (Experience, Teaching) */
+.vs-timeline { max-width: 840px; margin: 0 auto; }
+.vs-step { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--shadow-sm); padding: 2.5rem 3rem; margin-bottom: 2rem; transition: var(--transition); }
+.vs-step:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.vs-step .when { color: var(--accent-dark); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: 0.8rem; }
+.vs-step h3 { font-size: 1.5rem; margin: 0.4rem 0 0.2rem; }
+.vs-step .where { color: var(--text-muted); font-weight: 600; margin-bottom: 0.6rem; }
+.vs-step ul { margin: 0.5rem 0 0 1.2rem; color: var(--text); }
+.vs-step ul li { margin-bottom: 0.4rem; }
+
+/* Footer */
+.site-footer { background: var(--primary); color: #fff; text-align: center; padding: 3.5rem 10%; }
+.site-footer .social { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1.25rem; }
+.site-footer .social a { color: rgba(255,255,255,0.85); font-size: 1.4rem; transition: var(--transition); }
+.site-footer .social a:hover { color: var(--accent); }
+.site-footer p { color: rgba(255,255,255,0.6); font-size: 0.85rem; letter-spacing: 1px; }
+
+@media (max-width: 768px) {
+    .nav-toggle { display: flex; }
+    #primary-nav { position: fixed; left: 0; right: 0; top: 70px; background: var(--primary); max-height: 0; overflow: hidden; transition: max-height 0.35s ease; z-index: 1000; }
+    #primary-nav.open { max-height: 75vh; }
+    .nav-links { flex-direction: column; gap: 0; padding: 0.5rem 10% 1.5rem; }
+    .nav-links li { padding: 0.85rem 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .container { padding: 5rem 8%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .hero-content p { animation: none !important; opacity: 1 !important; transform: none !important; }
+}

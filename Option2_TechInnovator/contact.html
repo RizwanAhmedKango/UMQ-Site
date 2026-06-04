@@ -3,125 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decrypt | Dr. Umair Mujtaba Qureshi | Tech Innovator</title>
+    <title>Contact | Dr. Umair Mujtaba Qureshi | Tech Innovator</title>
+    <meta name="description" content="Contact Dr. Umair Mujtaba Qureshi, Senior Lecturer in IT at James Cook University.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body style="padding-top: 100px;">
-    
+<body>
     <canvas id="bg-canvas"></canvas>
 
     <header class="header">
-        <div class="logo">UMQ_DEV</div>
-        <nav>
+        <a class="logo" href="index.html">UMQ_DEV</a>
+        <button class="nav-toggle" data-nav-toggle="#primary-nav" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav id="primary-nav" aria-label="Primary">
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">INFO</a></li>
-                <li><a href="research.html" class="nav-link">PROJECTS</a></li>
-                <li><a href="publications.html" class="nav-link">PAPERS</a></li>
-                <li><a href="contact.html" class="nav-link active">DECRYPT</a></li>
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="section">
-        <h1 style="font-size: 3.5rem; color: var(--accent); margin-bottom: 5rem;">ESTABLISH_UPLINK</h1>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
-            <div>
-                <h2 style="color: var(--accent-secondary); margin-bottom: 2rem;">LOC_INFO</h2>
-                <div class="tech-card" style="margin-bottom: 2rem;">
-                    <p style="font-family: 'Space Grotesk'; font-size: 0.8rem; letter-spacing: 2px; color: var(--accent); margin-bottom: 1rem;">// NODE_ADDRESS</p>
-                    <p>Information Technology Dept,<br>James Cook University (JCU),<br>Australia.</p>
-                </div>
-                
-                <div class="tech-card" style="margin-bottom: 2rem;">
-                    <p style="font-family: 'Space Grotesk'; font-size: 0.8rem; letter-spacing: 2px; color: var(--accent); margin-bottom: 1rem;">// DIRECT_LINE</p>
-                    <p style="font-family: 'Space Grotesk'; font-size: 1.2rem; color: var(--accent-secondary);">umair.qureshi@jcu.edu.au</p>
-                </div>
-
-                <div style="display: flex; gap: 2rem; margin-top: 4rem;">
-                    <a href="#" style="font-size: 2rem; color: var(--text-muted); transition: 0.3s;" onmouseover="this.style.color='#00f5d4'" onmouseout="this.style.color='#888888'"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" style="font-size: 2rem; color: var(--text-muted); transition: 0.3s;" onmouseover="this.style.color='#00f5d4'" onmouseout="this.style.color='#888888'"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="#" style="font-size: 2rem; color: var(--text-muted); transition: 0.3s;" onmouseover="this.style.color='#00f5d4'" onmouseout="this.style.color='#888888'"><i class="fab fa-orcid"></i></a>
-                </div>
+    <main>
+        <section class="section">
+            <div class="section-head">
+                <span class="kicker">[ ESTABLISH_UPLINK ]</span>
+                <h2>Contact</h2>
             </div>
 
-            <div class="tech-card">
-                <h2 style="margin-bottom: 2rem; font-family: 'Space Grotesk'; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">SECURE_MESSAGE</h2>
-                <form onsubmit="event.preventDefault(); alert('Message encrypted and sent! (Simulation)');">
-                    <div style="margin-bottom: 2rem;">
-                        <input type="text" placeholder="IDENT_NAME" style="width: 100%; padding: 1rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'Space Grotesk'; outline: none;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;max-width:1100px;margin:0 auto;">
+                <div>
+                    <div class="tech-card reveal" style="margin-bottom:2rem;">
+                        <p style="font-family:'Space Grotesk';font-size:0.8rem;letter-spacing:2px;color:var(--accent);margin-bottom:1rem;">// NODE_ADDRESS</p>
+                        <p style="color:var(--text-muted);">Information Technology Department,<br>James Cook University (JCU),<br>Australia.</p>
                     </div>
-                    <div style="margin-bottom: 2rem;">
-                        <input type="email" placeholder="UPLINK_EMAIL" style="width: 100%; padding: 1rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'Space Grotesk'; outline: none;">
+                    <div class="tech-card reveal" style="margin-bottom:2rem;">
+                        <p style="font-family:'Space Grotesk';font-size:0.8rem;letter-spacing:2px;color:var(--accent);margin-bottom:1rem;">// DIRECT_LINE</p>
+                        <p><a href="mailto:umair.qureshi@jcu.edu.au" style="font-family:'Space Grotesk';font-size:1.15rem;color:var(--accent-secondary);text-decoration:none;">umair.qureshi@jcu.edu.au</a></p>
                     </div>
-                    <div style="margin-bottom: 3rem;">
-                        <textarea placeholder="DATA_PAYLOAD" rows="6" style="width: 100%; padding: 1rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'Space Grotesk'; outline: none;"></textarea>
+                    <div style="display:flex;gap:2rem;margin-top:3rem;">
+                        <a href="https://www.linkedin.com/in/umq-jcu" target="_blank" rel="noopener" aria-label="LinkedIn" style="font-size:2rem;color:var(--text-muted);transition:0.3s;" onmouseover="this.style.color='#00f5d4'" onmouseout="this.style.color='#888888'"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar" style="font-size:2rem;color:var(--text-muted);transition:0.3s;" onmouseover="this.style.color='#00f5d4'" onmouseout="this.style.color='#888888'"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://orcid.org/0000-0002-3151-6975" target="_blank" rel="noopener" aria-label="ORCID" style="font-size:2rem;color:var(--text-muted);transition:0.3s;" onmouseover="this.style.color='#00f5d4'" onmouseout="this.style.color='#888888'"><i class="fab fa-orcid"></i></a>
                     </div>
-                    <button type="submit" class="btn-glow" style="width: 100%; cursor: pointer;">EXECUTE_SEND</button>
-                </form>
+                </div>
+
+                <div class="tech-card reveal">
+                    <h2 style="margin-bottom:2rem;font-family:'Space Grotesk';border-bottom:1px solid var(--border);padding-bottom:1rem;">SECURE_MESSAGE</h2>
+                    <form onsubmit="event.preventDefault(); alert('Message sent! (Simulation)');">
+                        <div style="margin-bottom:2rem;">
+                            <label for="c-name" style="display:block;font-size:0.7rem;letter-spacing:2px;color:var(--text-muted);margin-bottom:0.5rem;">IDENT_NAME</label>
+                            <input id="c-name" type="text" required style="width:100%;padding:1rem;background:var(--bg);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk';outline:none;">
+                        </div>
+                        <div style="margin-bottom:2rem;">
+                            <label for="c-email" style="display:block;font-size:0.7rem;letter-spacing:2px;color:var(--text-muted);margin-bottom:0.5rem;">UPLINK_EMAIL</label>
+                            <input id="c-email" type="email" required style="width:100%;padding:1rem;background:var(--bg);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk';outline:none;">
+                        </div>
+                        <div style="margin-bottom:3rem;">
+                            <label for="c-msg" style="display:block;font-size:0.7rem;letter-spacing:2px;color:var(--text-muted);margin-bottom:0.5rem;">DATA_PAYLOAD</label>
+                            <textarea id="c-msg" rows="6" required style="width:100%;padding:1rem;background:var(--bg);border:1px solid var(--border);color:var(--text);font-family:'Space Grotesk';outline:none;"></textarea>
+                        </div>
+                        <button type="submit" class="btn-glow" style="width:100%;cursor:pointer;">EXECUTE_SEND</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <!-- Theme Switcher -->
-    <div class="theme-switcher-btn" id="switcher-btn">
-        <i class="fas fa-palette"></i>
-    </div>
-    <div class="theme-menu" id="switcher-menu">
-        <p style="font-weight: 700; margin-bottom: 0.5rem; padding-left: 1rem; color: var(--accent);">SWITCH THEME</p>
-        <a href="../Option1_ModernAcademic/index.html" class="theme-option">1. Modern Academic</a>
-        <a href="index.html" class="theme-option" style="color: var(--accent);">2. Tech Innovator (Active)</a>
-        <a href="../Option3_VisualStoryteller/index.html" class="theme-option">3. Visual Storyteller</a>
-        <a href="../index.html" class="theme-option">4. Data-Driven Researcher</a>
-    </div>
+    <footer class="tech-footer">
+        <div class="social">
+            <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/umq-jcu" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://orcid.org/0000-0002-3151-6975" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+        </div>
+        <p>© <span data-year>2026</span> UMAIR M. QURESHI · SENIOR LECTURER (IT), JCU</p>
+    </footer>
 
-    <script>
-        const btn = document.getElementById('switcher-btn');
-        const menu = document.getElementById('switcher-menu');
-        btn.addEventListener('click', () => {
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        });
-
-        const canvas = document.getElementById('bg-canvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.vx = (Math.random() - 0.5) * 0.5;
-                this.vy = (Math.random() - 0.5) * 0.5;
-                this.size = Math.random() * 2;
-            }
-            update() {
-                this.x += this.vx; this.y += this.vy;
-                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-            }
-            draw() {
-                ctx.fillStyle = '#00f5d4'; ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill();
-            }
-        }
-        function init() { particles = []; for (let i = 0; i < 100; i++) particles.push(new Particle()); }
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach((p, i) => {
-                p.update(); p.draw();
-                for (let j = i + 1; j < particles.length; j++) {
-                    const p2 = particles[j];
-                    const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
-                    if (dist < 100) {
-                        ctx.strokeStyle = `rgba(0, 245, 212, ${1 - dist/100})`;
-                        ctx.lineWidth = 0.5; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
-                    }
-                }
-            });
-            requestAnimationFrame(animate);
-        }
-        window.addEventListener('resize', resize);
-        resize(); init(); animate();
-    </script>
+    <script src="canvas.js"></script>
+    <script src="../assets/app.js"></script>
+    <script src="../assets/switcher.js"></script>
 </body>
 </html>

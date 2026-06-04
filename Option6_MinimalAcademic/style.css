@@ -1,0 +1,118 @@
+/*
+  Option 6 — Minimal Academic (academicpages inspired)
+  Typography-first, light, restrained. Single narrow column.
+  Body: Source Serif 4 · Labels/nav: Spline Sans
+*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg: #fffdf9;
+    --text: #1c1b19;
+    --muted: #5f5b54;
+    --border: #e7e1d6;
+    --accent: #8a1f3d;     /* maroon */
+    --accent-2: #2a4d69;   /* slate blue */
+    --maxw: 760px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 1.06rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { line-height: 1.25; }
+
+a { color: var(--accent); }
+
+/* Header / nav */
+.site-header { border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(255,253,249,0.92); backdrop-filter: blur(8px); z-index: 50; }
+.nav-wrap { max-width: var(--maxw); margin: 0 auto; padding: 1rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand { font-family: 'Spline Sans', sans-serif; font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; text-decoration: none; color: var(--text); }
+.nav-links { list-style: none; display: flex; gap: 1.15rem; font-family: 'Spline Sans', sans-serif; font-size: 0.9rem; }
+.nav-link { text-decoration: none; color: var(--muted); padding-bottom: 2px; border-bottom: 2px solid transparent; }
+.nav-link:hover { color: var(--text); }
+.nav-link.active { color: var(--accent); border-bottom-color: var(--accent); }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 6px; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text); transition: 0.3s; }
+
+/* Layout */
+.container { max-width: var(--maxw); margin: 0 auto; padding: 2.6rem 1.25rem 4.5rem; }
+
+/* Masthead */
+.masthead { display: grid; grid-template-columns: 132px 1fr; gap: 1.6rem; align-items: start; margin-bottom: 2.2rem; }
+.masthead img { width: 132px; height: 132px; border-radius: 6px; object-fit: cover; border: 1px solid var(--border); }
+.masthead h1 { font-size: 1.95rem; margin-bottom: 0.15rem; letter-spacing: -0.01em; }
+.masthead .title { color: var(--muted); font-size: 1.02rem; }
+.contacts { font-family: 'Spline Sans', sans-serif; font-size: 0.85rem; color: var(--muted); margin-top: 0.7rem; display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; }
+.contacts a { text-decoration: none; }
+.contacts a:hover { text-decoration: underline; }
+
+/* Page heading (inner pages) */
+.page-title { font-size: 1.9rem; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
+.page-intro { color: var(--muted); margin-bottom: 1.5rem; }
+
+.prose p { margin-bottom: 1.15rem; }
+.prose strong { color: var(--text); }
+
+/* Section labels */
+h2.section { font-family: 'Spline Sans', sans-serif; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-2); margin: 2.6rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+
+/* News list */
+.news { list-style: none; }
+.news li { display: grid; grid-template-columns: 96px 1fr; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px dotted var(--border); }
+.news li:last-child { border-bottom: none; }
+.news .date { font-family: 'Spline Sans', sans-serif; font-size: 0.8rem; color: var(--muted); padding-top: 0.15rem; }
+
+/* Publications */
+.pub-list { list-style: none; counter-reset: pub; }
+.pub-list li { padding: 0.95rem 0; border-bottom: 1px solid var(--border); }
+.pub-list li:last-child { border-bottom: none; }
+.pub-list .t { font-weight: 600; }
+.pub-list .a { color: var(--muted); font-size: 0.97rem; }
+.pub-list .a .me { color: var(--text); font-weight: 600; }
+.pub-list .v { font-family: 'Spline Sans', sans-serif; font-size: 0.8rem; color: var(--accent-2); }
+
+/* Definition-style lists (teaching / experience) */
+.entry { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.entry:last-child { border-bottom: none; }
+.entry .when { font-family: 'Spline Sans', sans-serif; font-size: 0.8rem; color: var(--muted); }
+.entry h3 { font-size: 1.15rem; margin: 0.2rem 0 0.1rem; }
+.entry .where { color: var(--accent-2); font-size: 0.95rem; margin-bottom: 0.4rem; }
+.entry p { color: var(--muted); }
+.entry ul { margin: 0.4rem 0 0 1.2rem; }
+.entry ul li { margin-bottom: 0.25rem; }
+
+.btn-text { font-family: 'Spline Sans', sans-serif; font-size: 0.88rem; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 1px; }
+
+/* Forms */
+.field { margin-bottom: 1.1rem; }
+.field label { display: block; font-family: 'Spline Sans', sans-serif; font-size: 0.82rem; color: var(--muted); margin-bottom: 0.35rem; }
+.field input, .field textarea { width: 100%; padding: 0.7rem 0.85rem; border: 1px solid var(--border); border-radius: 4px; background: #fff; font-family: 'Spline Sans', sans-serif; font-size: 0.95rem; color: var(--text); }
+.field input:focus, .field textarea:focus { outline: 2px solid var(--accent); border-color: transparent; }
+.submit { font-family: 'Spline Sans', sans-serif; font-weight: 600; background: var(--accent); color: #fff; border: none; padding: 0.7rem 1.5rem; border-radius: 4px; cursor: pointer; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--border); }
+.footer-wrap { max-width: var(--maxw); margin: 0 auto; padding: 1.8rem 1.25rem; font-family: 'Spline Sans', sans-serif; font-size: 0.82rem; color: var(--muted); display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.footer-wrap a { color: var(--muted); text-decoration: none; margin-left: 1rem; }
+.footer-wrap a:hover { color: var(--accent); }
+
+@media (max-width: 620px) {
+    .nav-toggle { display: flex; }
+    .nav-links { position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-bottom: 1px solid var(--border); flex-direction: column; gap: 0; padding: 0.5rem 1.25rem 1rem; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .site-header { position: relative; }
+    .nav-links.open { max-height: 70vh; }
+    .nav-links li { padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+    .masthead { grid-template-columns: 1fr; }
+    .masthead img { width: 110px; height: 110px; }
+    .news li { grid-template-columns: 1fr; gap: 0.1rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

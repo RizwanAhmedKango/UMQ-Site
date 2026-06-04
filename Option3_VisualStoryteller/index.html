@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Umair Mujtaba Qureshi | Visual Storyteller Portfolio</title>
+    <meta name="description" content="Dr. Umair Mujtaba Qureshi explores the frontiers of IoT and AI to build resilient, data-driven systems. Senior Lecturer in IT, James Cook University.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
     <header class="header">
-        <div class="logo">UMQ.</div>
-        <nav>
+        <a class="logo" href="index.html">UMQ.</a>
+        <button class="nav-toggle" data-nav-toggle="#primary-nav" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav id="primary-nav" aria-label="Primary">
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">ABOUT</a></li>
-                <li><a href="research.html" class="nav-link">RESEARCH</a></li>
-                <li><a href="publications.html" class="nav-link">PUBS</a></li>
-                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,12 +28,10 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Connecting <strong>Autonomous</strong> Worlds.</h1>
-                <p>
-                    From smart sensors to intelligent fleets, Dr. Umair Mujtaba Qureshi explores the frontiers of IoT and AI to build more resilient, data-driven systems.
-                </p>
-                <div style="display: flex; gap: 2rem; justify-content: center;">
-                    <a href="#about" style="text-decoration: none; background: var(--accent); color: white; padding: 1.2rem 3rem; border-radius: 50px; font-weight: 700; transition: var(--transition);">EXPLORE STORY</a>
-                    <a href="publications.html" style="text-decoration: none; color: white; display: flex; align-items: center; border: 1px solid rgba(255,255,255,0.3); padding: 1.2rem 3rem; border-radius: 50px; font-weight: 700; transition: var(--transition);">VIEW RESEARCH</a>
+                <p>From smart sensors to intelligent fleets, Dr. Umair Mujtaba Qureshi explores the frontiers of IoT and AI to build more resilient, data-driven systems.</p>
+                <div style="display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;">
+                    <a href="#about" style="text-decoration:none;background:var(--accent);color:white;padding:1.2rem 3rem;border-radius:50px;font-weight:700;transition:var(--transition);">EXPLORE STORY</a>
+                    <a href="publications.html" style="text-decoration:none;color:white;display:flex;align-items:center;border:1px solid rgba(255,255,255,0.3);padding:1.2rem 3rem;border-radius:50px;font-weight:700;transition:var(--transition);">VIEW RESEARCH</a>
                 </div>
             </div>
         </section>
@@ -38,90 +39,76 @@
         <section id="about" class="container">
             <div class="grid-layout">
                 <div>
-                    <h2 class="title-underline" style="font-size: 3rem;">A Journey of Innovation</h2>
-                    <p style="font-size: 1.25rem; font-family: 'Lora', serif; margin-bottom: 2rem; color: var(--text-muted); font-style: italic;">
-                        "My research is about understanding the language of sensors and the intelligence of the edge."
-                    </p>
-                    <p style="margin-bottom: 2rem;">
-                        As a Senior Lecturer at James Cook University, Dr. Qureshi leads high-impact research into Industrial IoT (IIoT). His work spans the deployment of secure wireless networks to the integration of AI in precision agriculture.
-                    </p>
-                    <p style="margin-bottom: 2rem;">
-                        Before JCU, he contributed to the academic landscapes of Hong Kong at CUHK and PolyU, and began his journey at Mehran University. This global perspective fuels his drive for cross-border collaboration and technological breakthrough.
-                    </p>
-                    <div style="display: flex; gap: 4rem; margin-top: 2rem;">
+                    <h2 class="title-underline" style="font-size:3rem;">A Journey of Innovation</h2>
+                    <p style="font-size:1.25rem;font-family:'Lora',serif;margin-bottom:2rem;color:var(--text-muted);font-style:italic;">"My research is about understanding the language of sensors and the intelligence of the edge."</p>
+                    <p style="margin-bottom:2rem;">As a Senior Lecturer at James Cook University, Dr. Qureshi leads high-impact research into Industrial IoT (IIoT). His work spans the deployment of secure wireless networks to the integration of AI in precision agriculture.</p>
+                    <p style="margin-bottom:2rem;">Before JCU, he contributed to the academic landscapes of Hong Kong at CUHK and PolyU, and began his journey at Mehran University. This global perspective fuels his drive for cross-border collaboration and technological breakthrough.</p>
+                    <div style="display:flex;gap:4rem;margin-top:2rem;">
                         <div>
-                            <span style="display: block; font-size: 3rem; font-weight: 700; color: var(--accent);">1,076</span>
-                            <span style="font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase;">Citations</span>
+                            <span style="display:block;font-size:3rem;font-weight:700;color:var(--accent);" data-count="1076">1,076</span>
+                            <span style="font-size:0.9rem;letter-spacing:2px;text-transform:uppercase;">Citations</span>
                         </div>
                         <div>
-                            <span style="display: block; font-size: 3rem; font-weight: 700; color: var(--accent);">17</span>
-                            <span style="font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase;">h-index</span>
+                            <span style="display:block;font-size:3rem;font-weight:700;color:var(--accent);" data-count="17">17</span>
+                            <span style="font-size:0.9rem;letter-spacing:2px;text-transform:uppercase;">h-index</span>
                         </div>
                     </div>
                 </div>
-                <div style="position: sticky; top: 120px;">
-                    <img src="../QURESHI-Umair-Mujtaba.jpg" alt="Profile" style="width: 100%; border-radius: 30px; box-shadow: var(--shadow-lg);">
+                <div style="position:sticky;top:120px;">
+                    <img src="../QURESHI-Umair-Mujtaba.jpg" alt="Dr. Umair Mujtaba Qureshi" style="width:100%;border-radius:30px;box-shadow:var(--shadow-lg);">
                 </div>
             </div>
         </section>
 
-        <section class="container" style="background: white; border-top: 1px solid var(--border);">
-            <h2 class="title-underline" style="font-size: 3rem; text-align: center; width: 100%;">Key Narratives</h2>
-            
-            <div class="story-grid" style="margin-top: 5rem;">
-                <div class="story-card">
+        <section class="container" style="background:white;border-top:1px solid var(--border);">
+            <h2 class="title-underline" style="font-size:3rem;text-align:center;width:100%;">Key Narratives</h2>
+            <div class="story-grid" style="margin-top:5rem;">
+                <div class="story-card reveal">
                     <i class="fas fa-satellite"></i>
                     <h3>IIoT Protocols</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Designing lightweight, high-integrity communication for mission-critical industrial environments.</p>
-                    <a href="#" style="color: var(--accent); font-weight: 700; text-decoration: none;">READ MORE <i class="fas fa-chevron-right" style="margin-left: 10px;"></i></a>
+                    <p style="color:var(--text-muted);margin-bottom:2rem;">Designing lightweight, high-integrity communication for mission-critical industrial environments.</p>
+                    <a href="research.html" style="color:var(--accent);font-weight:700;text-decoration:none;">READ MORE <i class="fas fa-chevron-right" style="margin-left:10px;"></i></a>
                 </div>
-                <div class="story-card">
+                <div class="story-card reveal">
                     <i class="fas fa-brain"></i>
                     <h3>Applied AI</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Powering the next generation of autonomous systems with predictive modeling and edge-AI.</p>
-                    <a href="#" style="color: var(--accent); font-weight: 700; text-decoration: none;">READ MORE <i class="fas fa-chevron-right" style="margin-left: 10px;"></i></a>
+                    <p style="color:var(--text-muted);margin-bottom:2rem;">Powering the next generation of autonomous systems with predictive modeling and edge-AI.</p>
+                    <a href="research.html" style="color:var(--accent);font-weight:700;text-decoration:none;">READ MORE <i class="fas fa-chevron-right" style="margin-left:10px;"></i></a>
                 </div>
-                <div class="story-card">
+                <div class="story-card reveal">
                     <i class="fas fa-tractor"></i>
                     <h3>AgTech Impact</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Leveraging connectivity to solve real-world challenges in Australian sustainable farming.</p>
-                    <a href="#" style="color: var(--accent); font-weight: 700; text-decoration: none;">READ MORE <i class="fas fa-chevron-right" style="margin-left: 10px;"></i></a>
+                    <p style="color:var(--text-muted);margin-bottom:2rem;">Leveraging connectivity to solve real-world challenges in Australian sustainable farming.</p>
+                    <a href="research.html" style="color:var(--accent);font-weight:700;text-decoration:none;">READ MORE <i class="fas fa-chevron-right" style="margin-left:10px;"></i></a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="container" style="padding: 4rem 10%; text-align: center; border-top: 1px solid var(--border);">
-        <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 2px;">© 2024 DR. UMAIR MUJTABA QURESHI | SENIOR LECTURER IN IT, JCU</p>
+    <footer class="site-footer">
+        <div class="social">
+            <a href="https://scholar.google.com/citations?user=mwQjab4AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/umq-jcu" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://orcid.org/0000-0002-3151-6975" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+        </div>
+        <p>© <span data-year>2026</span> Dr. Umair Mujtaba Qureshi · Senior Lecturer in IT, JCU</p>
     </footer>
 
-    <!-- Theme Switcher -->
-    <div class="theme-switcher-btn" id="switcher-btn">
-        <i class="fas fa-palette"></i>
-    </div>
-    <div class="theme-menu" id="switcher-menu">
-        <p style="font-weight: 700; margin-bottom: 0.5rem; padding-left: 1rem; color: var(--primary);">SWITCH THEME</p>
-        <a href="../Option1_ModernAcademic/index.html" class="theme-option">1. Modern Academic</a>
-        <a href="../Option2_TechInnovator/index.html" class="theme-option">2. Tech Innovator</a>
-        <a href="index.html" class="theme-option" style="color: var(--accent);">3. Visual Storyteller (Active)</a>
-        <a href="../index.html" class="theme-option">4. Data-Driven Researcher</a>
-    </div>
-
+    <script src="../assets/app.js"></script>
+    <script src="../assets/switcher.js"></script>
     <script>
-        // Switcher Toggle
-        const btn = document.getElementById('switcher-btn');
-        const menu = document.getElementById('switcher-menu');
-        btn.addEventListener('click', () => {
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        });
-
-        // Hover effect for hero content
-        const hero = document.querySelector('.hero');
-        hero.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) * 20;
-            const y = (e.clientY / window.innerHeight - 0.5) * 20;
-            document.querySelector('.hero-content').style.transform = `translate(${x}px, ${y}px)`;
-        });
+        // Subtle hero parallax (skipped when reduced motion is preferred)
+        (function () {
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var hero = document.querySelector('.hero');
+            var content = document.querySelector('.hero-content');
+            if (!hero || !content) return;
+            hero.addEventListener('mousemove', function (e) {
+                var x = (e.clientX / window.innerWidth - 0.5) * 18;
+                var y = (e.clientY / window.innerHeight - 0.5) * 18;
+                content.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+            });
+        })();
     </script>
 </body>
 </html>

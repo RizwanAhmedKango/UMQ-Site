@@ -148,3 +148,16 @@ body.rail .main { margin-left: var(--rail); }
     aside.sb, .main { transition: none; }
     .mini:hover { transform: none; }
 }
+
+/* About page: contact links, section headings, recent/news list */
+.contacts { display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; margin: 0.2rem 0 1.8rem; font-size: 0.93rem; }
+.contacts a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.contacts a:hover { text-decoration: underline; }
+
+h2.sec { font-size: 1.5rem; margin: 2.2rem 0 1.1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+
+.news { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
+.news li { display: grid; grid-template-columns: 130px 1fr; gap: 1.2rem; padding: 0.95rem 0; border-bottom: 1px solid var(--border); }
+.news .date { color: var(--accent); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 0.15rem; }
+.news li > span:last-child { color: var(--muted); }
+@media (max-width: 560px) { .news li { grid-template-columns: 1fr; gap: 0.2rem; } }
